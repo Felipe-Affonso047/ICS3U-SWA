@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=en-CA>
+  <head>
+    <title>Script</title>
+  </head>
+  <style type="text/css">
+    .p1 {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <script type="text/javascript">
+    function myFunction1() {
+      document.getElementById('demo').innerHTML='Hello JS';
+      document.getElementById('demo').style.display='block';
+    }
+  </script>
+  <script src="blank.js"></script>
+  <body>
+    <h1>Script</h1>
+    <p id='demo' ></p>
+    <button type="button" onclick="myFunction1()">Click Me!</button>
+    <button type="button" onclick="myFunction2()">Click Me!</button>
+    <button type="button" onclick="myFunction3()">Click Me!</button>
+    <script type="text/javascript">
+      function myFunction2() {
+        document.getElementById('demo').classList.add('p1');
+      }
+    </script>
+  </body>
+</html>

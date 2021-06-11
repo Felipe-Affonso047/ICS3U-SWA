@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang=en-CA>
+  <head>
+    <title>Events</title>
+  </head>
+  <script type="text/javascript">
+    function show() {
+      document.getElementById('demo').innerHTML='HI';
+    }
+    function big_alert() {
+      alert("Mose over title.");
+    }
+  </script>
+  <body>
+    <h1 onmouseover="big_alert()">Events</h1>
+    <p id='demo' ></p>
+    <button type="button" onclick="show()">Click Me!</button>
+  </body>
+</html>

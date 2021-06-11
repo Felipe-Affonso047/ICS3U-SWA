@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang=en-CA>
+  <head>
+    <title>JSON</title>
+  </head>
+  <script type="text/javascript">
+    var text = '{ "employees" : [' +
+    '{ "firstName":"John" , "lastName":"Doe" },' +
+    '{ "firstName":"Anna" , "lastName":"Smith" },' +
+    '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+    var obj = JSON.parse(text);
+    function myFunction() {
+      document.getElementById("demo").innerHTML =
+      obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    }
+  </script>
+  <body>
+    <h1>JSON</h1>
+    <p id='demo'></p>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+  </body>
+</html>
